@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "type": "module",
+  "name": "codewars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Moreira-Edu/CodeWars.git",
+  "author": "<ml.ri7u@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
