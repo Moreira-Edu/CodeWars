@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for day1/disenvowel_trolls.js</title>
+    <title>Code coverage report for day3/highestAndLowest.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">day1</a> disenvowel_trolls.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">day3</a> highestAndLowest.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -73,7 +73,8 @@
 <a name='L8'></a><a href='#L8'>8</a>
 <a name='L9'></a><a href='#L9'>9</a>
 <a name='L10'></a><a href='#L10'>10</a>
-<a name='L11'></a><a href='#L11'>11</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -83,15 +84,17 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Trolls are attacking your comment section!
-// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
-// Your task is to write a function that takes a string and return a new string with all vowels removed.
-// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
-// Note: for this kata y isn't considered a vowel.
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+// Notes
+// All numbers are valid Int32, no need to validate them.
+// There will always be at least one number in the input string.
+// Output string must be two numbers separated by a single space, and highest number is first.
 &nbsp;
-export function disemvowel(str) {
-  const vowels = /[aeiou]/gi;
-  return str.replace(vowels, "");
+export function highAndLow(numbers) {
+  const max = Math.max(...numbers.split(" "));
+  const min = Math.min(...numbers.split(" "));
+  return `${max} ${min}`;
 }
 &nbsp;</pre></td></tr></table></pre>
 
