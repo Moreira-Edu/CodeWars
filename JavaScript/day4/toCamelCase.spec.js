@@ -4,6 +4,7 @@ describe("to camelCase function", () => {
   const input1 = "the-stealth-warrior";
   const input2 = "The_Stealth_Warrior";
   const input3 = "A-B-C";
+
   const result1 = "theStealthWarrior";
   const result2 = "TheStealthWarrior";
   const result3 = "ABC";
