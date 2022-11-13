@@ -7,9 +7,17 @@ describe("isValidWalk", () => {
     ).toBe(true);
   });
 
-  it("should return false if walk last more or minus than 10min or dont return to initial point", () => {
+  it("should return false if walk dont return to initial point", () => {
     expect(
       isValidWalk(["n", "n", "n", "s", "n", "s", "n", "s", "n", "s"])
     ).toBe(false);
+  });
+
+  it("should return false if walk last more or less than 10min", () => {
+    expect(
+      isValidWalk(["w", "e", "w", "e", "w", "e", "w", "e", "w", "e", "w", "e"])
+    ).toBe(false);
+
+    expect(isValidWalk(["w"])).toBe(false);
   });
 });
