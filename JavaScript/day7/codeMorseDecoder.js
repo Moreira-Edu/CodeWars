@@ -56,13 +56,12 @@ export function decodeMorse(morseCode) {
     "!": /(?<=[^\.|-]|^)(-\.-\.--)(?=[^\.|-]|$)/g,
     ".": /(?<=[^\.|-]|^)(\.-\.-\.-)(?=[^\.|-]|$)/g,
   };
-  const singleSpace =
-    /(?<=^)(\s)(?=[^\s])|(?<=[^\s])(\s)(?=[^\s])|(?<=[^\s])(\s)(?=$)/g;
+  const singleSpace = /(?<=^|[^\s])(\s)(?=[^\s]|$)/g;
   const multipleSpace = /\s{3}/g;
   const borderMultipleSpace = /^\s{2,9}|\s{2,9}$/g;
 
   Object.entries(decoder).forEach(([word, code]) => {
-    morseCode = morseCode.replace(code, `${word}`);
+    morseCode = morseCode.replace(code, word);
   });
 
   morseCode = morseCode

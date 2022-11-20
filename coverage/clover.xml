@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1668691382307" clover="3.2.0">
-  <project timestamp="1668691382307" name="All files">
-    <metrics statements="154" coveredstatements="154" conditionals="21" coveredconditionals="21" methods="7" coveredmethods="7" elements="182" coveredelements="182" complexity="0" loc="154" ncloc="154" packages="7" files="7" classes="7"/>
+<coverage generated="1668983635696" clover="3.2.0">
+  <project timestamp="1668983635696" name="All files">
+    <metrics statements="163" coveredstatements="163" conditionals="23" coveredconditionals="23" methods="8" coveredmethods="8" elements="194" coveredelements="194" complexity="0" loc="163" ncloc="163" packages="8" files="8" classes="8"/>
     <package name="day1">
       <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="disenvowel_trolls.js" path="/home/edu/Projects/codeWars/JavaScript/day1/disenvowel_trolls.js">
@@ -119,9 +119,9 @@
       </file>
     </package>
     <package name="day7">
-      <metrics statements="74" coveredstatements="74" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="73" coveredstatements="73" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="codeMorseDecoder.js" path="/home/edu/Projects/codeWars/JavaScript/day7/codeMorseDecoder.js">
-        <metrics statements="74" coveredstatements="74" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="73" coveredstatements="73" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -184,9 +184,9 @@
         <line num="60" count="2" type="stmt"/>
         <line num="61" count="2" type="stmt"/>
         <line num="62" count="2" type="stmt"/>
-        <line num="63" count="2" type="stmt"/>
-        <line num="64" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="65" count="78" type="stmt"/>
+        <line num="63" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="64" count="78" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
         <line num="66" count="2" type="stmt"/>
         <line num="67" count="2" type="stmt"/>
         <line num="68" count="2" type="stmt"/>
@@ -195,7 +195,22 @@
         <line num="71" count="2" type="stmt"/>
         <line num="72" count="2" type="stmt"/>
         <line num="73" count="2" type="stmt"/>
-        <line num="74" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="day8">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="IPValidation.js" path="/home/edu/Projects/codeWars/JavaScript/day8/IPValidation.js">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="5" type="stmt"/>
       </file>
     </package>
   </project>
