@@ -10,10 +10,10 @@
  */
 export function arrayDiff(a, b) {
   const result = [];
-  b.length > 0
-    ? b.forEach((bNumber) =>
-        result.push(...a.filter((aNumber) => aNumber !== bNumber))
-      )
-    : result.push(...a);
+  a.forEach((aNumber) => {
+    b.find((bNumber) => bNumber === aNumber) === undefined &&
+      result.push(aNumber);
+  });
+
   return result;
 }
